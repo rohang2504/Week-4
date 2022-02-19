@@ -1,20 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HTML Form </title>
+    <html lang="en" dir="ltr">
+    <title>HTML exercise - Major assignment 1</title> 
+    <style>
+        p{font-family: verdana}
+    </style>
+        
 </head>
 <body>
-<h3>
-    Form Design Exercise:
-</h3>
-<p style="font-family: Helvetica;font-size: medium">
-    Disregarding the style of the page: <br>
-    <a href="https://forms.gle/qjz8MKR4YXWkWCVLA">https://forms.gle/qjz8MKR4YXWkWCVLA</a>
-</p>
-<p style="font-family: Helvetica;font-size: medium">
-    Try to replicate the format of the form in the page.<br>
-    Make use of "Label", "Input" and "Table".
-</p>
+    <main>
+        <h1>Sample Form </h1>
+        <header>Choose a topic, and research interest for the individual visualization project.</header>
+        <br><header><sup>*</sup>Required</header>
+        <br><br><br>
+        <form>
+            <label for="email">Email<sup>*</sup></label><br>
+            <input id = "email" type="email" email = "email" required placeholder="Your email"><br><br>
+            
+            <label for="FirstName">FirstName</label><br>
+            <input id = "FirstName" type="text" name = "FirstName" placeholder="Your answer"><br><br>
+            
+            <label for="LastName">LastName</label><br>
+            <input id = "LastName" type="text" name = "LastName" placeholder="Your answer"><br><br>
+            
+            <label for = "researchinterest">Research Interest (list at least 3)<sup>*</sup></label><br>
+            <input id = "researchinterest" type = "text" name = "researchinterest" required placeholder="Your answer"><br><br>
+            
+            <label for = "projecttitle">Project Title - (e.g. income vs education US census)<sup>*</sup></label><br>
+            <input id = "projecttitle" type = "text" name = "projecttitle" required placeholder="Your answer"><br><br>
+            <br>
+            <fieldset>
+                <legend>Top Skills<sup>*</sup></legend><br>
+
+                <input type="checkbox" id = "sql" name="checkboxlist">
+                <label for="sql">SQL</label><br><br>
+                
+                <input type="checkbox" name="checkboxlist" id="python">
+                <label for="python">Python Programming</label><br><br>
+
+                <input type="checkbox" name="checkboxlist" id="matlab">
+                <label for="matlab">Matlab</label><br><br>
+
+                <input type="checkbox" name="checkboxlist" id="d3j">
+                <label for="d3j">D3js and Javascript</label><br><br>
+
+                <input type="checkbox" name="checkboxlist" id="c#">
+                <label for="c#">C# VB.net</label><br><br>
+
+                <input type="checkbox" name="checkboxlist" id="php">
+                <label for="php">PHP</label><br><br>
+
+                <input type="checkbox" name="checkboxlist" id="nodejs">
+                <label for="nodejs">Node.JS</label><br><br>
+
+                <input type="checkbox" name="checkboxlist" id="webdesign">
+                <label for="webdesign">Web Design tools(e.g. Wordpress)</label><br><br>
+
+                <input type="checkbox" name="checkboxlist" id="htmlcss">
+                <label for="htmlcss">HTML and CSS</label><br><br>
+
+                <input type="checkbox" name="checkboxlist" id="excel">
+                <label for="excel">Excel</label><br><br>
+
+                <input type="checkbox" name="checkboxlist" id="powerbi">
+                <label for="powerbi">PowerBI</label><br><br>
+
+                <input type="checkbox" name="checkboxlist" id="tableau">
+                <label for="tableau">Tableau</label><br><br>
+
+                <input type="checkbox" name="checkboxlist" id="option13">
+                <label for="option13">Option 13</label><br><br>
+
+                <input type="checkbox" name="checkboxlist" id="others">
+                <label for="others">Other:</label>
+                <input type="text" name="checkboxlist" id="others"><br><br>
+                
+            </fieldset>
+            <br><br>
+            <label for="suggestion">Suggestions or Questions</label><br>
+            <input type="text" name="suggestion or questions" id="suggestion" placeholder="Your answer"><br><br>
+
+            
+            <br><button>Submit </button>
+        </form> 
+    </main>
 </body>
-</html>
